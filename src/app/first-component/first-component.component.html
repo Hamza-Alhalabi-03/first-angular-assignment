@@ -1,0 +1,92 @@
+<!-- Profile Box -->
+<div class="profile-box">
+        <!-- First Row -->
+        <div class="profile-row">
+            <div class="profile-info">
+                <img [src]="profileImageSrc" alt="Profile Photo" class="profile-photo">
+                <div class="profile-text">
+                        <h5 >{{profileNameChild}}</h5>
+                        <p class="department">Marketing Department</p>
+                        <p class="text-muted">Junior Accounting Officer</p>
+                </div>
+            </div>
+            <button class="btn btn-success new-req-btn">New Request</button>
+        </div>
+
+        <!-- Second Row -->
+        <div class="card-row">
+            <!-- Card 1 -->
+            <div class="card-box">
+                <i class="fa-solid fa-user fa-2x"></i>
+                <div class="card-text">
+                        <h6 id="section-title-4">Reporting To:</h6>
+                        <p id="section-text-4">Salwa Assem</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card-box">
+                <i class="fa-solid fa-chart-line fa-2x"></i>
+                <div class="card-text">
+                        <h6 id="section-title-4">Corporate Level:</h6>
+                        <p id="section-text-4">Level 10</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card-box">
+                <i class="fa-regular fa-hourglass-half fa-2x"></i>
+                <div class="card-text">
+                        <h6 id="section-title-4">Life Time:</h6>
+                        <p id="section-text-4">2.5 Years</p>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="card-box">
+                <i class="fa-solid fa-tree fa-2x"></i>
+                <div class="card-text">
+                        <h6 id="section-title-4">Vacation Days Left:</h6>
+                        <p id="section-text-4">10 Days</p>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="card-box">
+                <i class="fa-solid fa-prescription-bottle-medical fa-2x" ></i>
+                <div class="card-text">
+                        <h6 id="section-title-4">Sick Days Left:</h6>
+                        <p id="section-text-4">14 Days</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End profile box -->
+
+
+
+
+
+
+    <!-- Highlight Pipe -->
+    <div class="paragraph-box">
+        <div class="search-input">
+                <b>Enter Text To Highlight:</b>
+                <input type="text" [(ngModel)]="filterText" /> 
+        </div>
+        <hr>
+        <div [innerHtml]= " paragraphToSearch | highlight: filterText" >
+        </div> 
+    </div>
+
+
+    <!-- End Highlight Pipe -->
+
+<!-- <h1>first-component works!</h1>
+<p>{{today |  date: 'longDate' }}</p>
+<p>{{num | currency:'USD':'symbol':'1.0-0' }}</p>
+
+
+<input type="text" [(ngModel)] = "inputToRevese">
+<p>{{ inputToRevese | lowercase}}</p> -->
+
+
+
+
+

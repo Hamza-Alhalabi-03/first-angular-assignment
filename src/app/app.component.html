@@ -1,0 +1,93 @@
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid">
+      <!-- Navbar left Items -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" href="#">Profile</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Reports</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Settings</a>
+              </li>
+          </ul>
+
+          <!-- Navbar Icons -->
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+ <!-- End Navbar -->
+
+<div class="container">
+
+  <div class="welcome-message">
+    <h1>Welcome Back {{profileName}}</h1>
+  </div>
+
+  <div class="two-ways-binding">
+    <p>If you want to display another different name, write it down:</p>
+    <input type="text" [(ngModel)] = "profileName" placeholder="write the wanted name">
+  </div>
+ 
+  <div class="colored-button">
+    <button type="button" [class]="buttonColor" (click)="changeButtonColor()">Click Me</button>
+  </div>
+  
+  <app-first-component></app-first-component>
+  
+</div>
+
+
+
+
+
+<!-- 
+  1.Create Angular component for one of pages created in first project (Home, Profile, Vacation request)
+
+  2.Make sure to use data binding (interpolation, one way or two way data binding, class and style, event binding) in create the page.
+
+  3.Use Custom Pipe of angular to highlight the search text in page you choose.
+
+  4. try to use Font awesome icons library in your project
+-->
+
+
+
+
+  <!-- 
+    <p [innerText]="paragraph"></p>
+    <div>
+      <p>{{inputName}}</p>
+      <input type="text" [(ngModel)] = "inputName">
+    </div>
+    <ul class="wish-list">
+    @for (item of items; track item){
+      <li>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="checkbox" type="checkbox"> {{item.wishText}}
+          </label>
+        </div>
+      </li>
+    }
+  </ul>
+  -->

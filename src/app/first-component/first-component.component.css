@@ -1,0 +1,99 @@
+.profile-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f6f6f6;
+}
+
+.profile-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.profile-text {
+    line-height: .2;
+}
+
+.new-req-btn {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+
+/* Card Row for Desktop */
+.card-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Card Row for Mobile Devices */
+@media (max-width: 767px) {
+    .card-row {
+        grid-template-columns: 1fr; /* One card per row on small screens */
+    }
+    
+}
+
+.card-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.card-box:hover {
+    transform: scale(1.05);
+}
+
+.card-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.card-text{
+    line-height: 0.5;
+    margin: 0.5em;
+}
+
+.highlighter { 
+    font-weight: bold !important;
+    background-color: yellow !important;
+} 
+highlight{
+    font-weight: bold;
+    background-color: yellow;
+}
+
+  .search-input{
+    margin: 2em auto 1em auto;
+    width: 20%;
+  }
+  .search-input p {
+    margin-bottom: 2px;
+  }
+
+  .paragraph-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f6f6f6;
+}
+
+
+
