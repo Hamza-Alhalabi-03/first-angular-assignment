@@ -1,0 +1,18 @@
+<div>
+@if (items.length !== 0) {
+    <ul class="wish-list">
+    @for (item of items; track item){
+      <!-- <a [routerLink]="['/wish', item.wishText]"> -->
+        <app-wish-item 
+        [item]="item"
+        [wishText]="item.wishText"
+        [isComplete]="item.isComplete"
+        ></app-wish-item>
+    <!-- </a> -->
+    }
+    </ul>
+  }
+  @else {
+    <h6>No Elements in Items</h6>
+  }
+</div>

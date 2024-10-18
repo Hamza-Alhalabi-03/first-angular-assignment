@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 // import { DatePipe } from '@angular/common';
 // import { CurrencyPipe } from '@angular/common';
 import { HighlightPipe } from './highlight.pipe';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 
 @Component({
@@ -30,14 +29,8 @@ export class FirstComponentComponent {
   }
   today = new Date();
   num = 150020;
-  // paragraphToSearch: SafeHtml;
 
-  // constructor(private sanitizer: DomSanitizer) {
-  //   this.paragraphToSearch = this.sanitizer.bypassSecurityTrustHtml(
-  //     ` ...Angular is a powerful front-end framework for building dynamic, single-page web applications. Developed and maintained by Google, it allows developers to create highly interactive user interfaces with reusable components. Angular\'s robust features include two-way data binding, dependency injection, and an extensive CLI for efficient development. Its modular structure and integration with tools like Bootstrap and Font Awesome make it an ideal choice for creating responsive and scalable web applications`
-  //   );
-  // }
-  filterText:string = 'front';
-  paragraphToSearch: string = '...Angular is a powerful front-end framework for building dynamic, single-page web applications. Developed and maintained by Google, it allows developers to create highly interactive user interfaces with reusable components. Angular\'s robust features include two-way data binding, dependency injection, and an extensive CLI for efficient development. Its modular structure and integration with tools like Bootstrap and Font Awesome make it an ideal choice for creating responsive and scalable web applications';
+  filterText:string = 'Angular';
+  paragraphToSearch: string = 'Angular is a powerful front-end framework for building dynamic, single-page web applications. Developed and maintained by Google, it allows developers to create highly interactive user interfaces with reusable components. Angular\'s robust features include two-way data binding, dependency injection, and an extensive CLI for efficient development. Its modular structure and integration with tools like Bootstrap and Font Awesome make it an ideal choice for creating responsive and scalable web applications.';
 }
 

@@ -53,41 +53,20 @@
   </div>
   
   <app-first-component></app-first-component>
+
+  <div class="mb-3 d-flex justify-content-between custom-width">
+    <button routerLink="wishlist" routerLinkActive="router-link-active" class="btn btn-primary">Wish List</button>
+    <button routerLink="contact" routerLinkActive="router-link-active" class="btn btn-primary">Contact Form</button>
+  </div>
+  
+
+  <router-outlet></router-outlet>
+
+
+  <!-- <app-wish></app-wish>
+  <app-contact></app-contact> -->
   
 </div>
-
-
-
-
-
-<!-- 
-  1.Create Angular component for one of pages created in first project (Home, Profile, Vacation request)
-
-  2.Make sure to use data binding (interpolation, one way or two way data binding, class and style, event binding) in create the page.
-
-  3.Use Custom Pipe of angular to highlight the search text in page you choose.
-
-  4. try to use Font awesome icons library in your project
--->
-
-
-
-
-  <!-- 
-    <p [innerText]="paragraph"></p>
-    <div>
-      <p>{{inputName}}</p>
-      <input type="text" [(ngModel)] = "inputName">
-    </div>
-    <ul class="wish-list">
-    @for (item of items; track item){
-      <li>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="checkbox" type="checkbox"> {{item.wishText}}
-          </label>
-        </div>
-      </li>
-    }
-  </ul>
-  -->
+  
+    
+ 

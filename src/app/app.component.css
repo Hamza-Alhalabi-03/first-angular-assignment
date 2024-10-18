@@ -1,5 +1,5 @@
 .navbar-custom {
-    background-color: #247f3e;
+    background-color: #0d6efd;
     padding-left: 10%;
     padding-right: 3%;
 }
@@ -15,7 +15,6 @@
 .navbar-custom .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-
 
 .welcome-message {
     margin: 2em;
@@ -33,3 +32,27 @@ div .two-ways-binding {
     padding: 2em;
     align-items: center;
 }
+
+.custom-width{
+    width: 30%;
+    margin: 2rem auto;
+}
+
+
+@media (max-width: 992px) {
+    .custom-width{
+        width: 50%;
+        margin: 2rem auto;
+    }
+}
+@media (max-width: 573px) {
+    .custom-width{
+        width: 70%;
+        margin: 2rem auto;
+    }
+
+}
+
+.router-link-active { 
+    font-weight: 600;
+  }

@@ -31,6 +31,8 @@
 .new-req-btn {
     padding-left: 2em;
     padding-right: 2em;
+    background-color: #0d6efd;
+    color: white;
 }
 
 
@@ -48,6 +50,18 @@
         grid-template-columns: 1fr; /* One card per row on small screens */
     }
     
+}
+
+@media (max-width: 515px) {
+    .department, .position{
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 768px) {
+    .card-text p {
+        display: none;
+    }
 }
 
 .card-box {
@@ -71,13 +85,9 @@
 }
 
 .highlighter { 
-    font-weight: bold !important;
-    background-color: yellow !important;
+    font-weight: bold ;
+    background-color: rgb(244, 230, 75) ;
 } 
-highlight{
-    font-weight: bold;
-    background-color: yellow;
-}
 
   .search-input{
     margin: 2em auto 1em auto;
@@ -92,7 +102,7 @@ highlight{
     border-radius: 8px;
     padding: 20px;
     margin: 20px 0;
-    background-color: #f6f6f6;
+    background-color: aliceblue;
 }
 
 

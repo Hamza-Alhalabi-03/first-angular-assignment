@@ -1,0 +1,20 @@
+<li>
+    <div class="d-flex justify-content-between">
+      <div class="form-check">
+        <label 
+        class="form-check-label" 
+        [ngClass]="{ 'text-muted': isComplete}"
+        >
+          <input 
+          class="checkbox"
+          type="checkbox" 
+          [checked]="isComplete"
+          (click)="toggle(item)"
+          > {{wishText}}
+        </label>
+      </div>
+      <div>
+        <button type="button" class="btn-close" (click)="removeWish(item)"></button>
+      </div>
+    </div>
+  </li>
