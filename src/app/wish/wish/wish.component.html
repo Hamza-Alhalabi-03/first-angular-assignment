@@ -5,6 +5,13 @@
     >
     </app-add-wish-form>
 
+    <div class="d-flex justify-content-center align-items-center">
+      <button 
+      class="btn btn-primary"
+      (click)="getWishesFromLocalFile()"
+      >Retrieve Wishes From Local File</button>
+    </div>    
+
     <!-- <div class="row mt-3 filter-wish-items"> -->
       <app-wish-filter
       [(filter)] = "filter"

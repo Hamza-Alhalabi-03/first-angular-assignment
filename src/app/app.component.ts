@@ -1,4 +1,4 @@
-import { Component, AfterViewChecked, AfterViewInit, ViewChild, OnInit } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { FirstComponentComponent } from './first-component/first-component.component'; 
@@ -32,7 +32,7 @@ import { ContactComponent } from './contact/contact.component';
 export class AppComponent implements OnInit{
   @ViewChild(FirstComponentComponent) firstComponent!: FirstComponentComponent;
 
-  profileName: string = 'Ahmad Azmi';
+  profileName: string = 'Sami Tariq';
 
   colors = ['btn btn-info btn-lg', 'btn btn-warning btn-lg', 'btn btn-primary btn-lg'];
 

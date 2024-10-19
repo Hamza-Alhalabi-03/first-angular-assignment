@@ -27,7 +27,9 @@ export class WishService {
       }
     })
 
-    return this.http.get('assets/wishes.json', options).pipe(catchError(this.handleError));
+    const numberOfWishes = 4;
+
+    return this.http.get(`https://jsonplaceholder.typicode.com/todos?_limit=${numberOfWishes}`, options).pipe(catchError(this.handleError));
     /*
       return an observable (the request hasn't been sent yet) we need to use .subscribe to do the request
       When HttpClient.get() returns an Observable, the actual HTTP request is not sent immediately.
@@ -36,6 +38,19 @@ export class WishService {
       observables are used because they allow you to handle asynchronous events in a flexible and powerful way
     */
   }
+
+  getLocalWishes(){
+    let options = this.getStandardOptions();
+
+    options.params = new HttpParams({
+      fromObject: {
+        format: 'json'
+      }
+    })
+
+    return this.http.get('assets/wishes.json', options).pipe(catchError(this.handleError));
+  }
+
 
   private handleError(error: HttpErrorResponse){
     if(error.status === 0){

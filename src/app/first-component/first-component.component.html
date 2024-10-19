@@ -66,9 +66,9 @@
 
     <!-- Highlight Pipe -->
     <div class="paragraph-box">
-        <div class="search-input">
-                <b>Enter Text To Highlight:</b>
-                <input type="text" [(ngModel)]="filterText" /> 
+        <div class="search-input mb-3">
+            <label for="highlightText" class="form-label fw-bold">Enter Text to Highlight:</label>
+            <input type="text" id="highlightText" class="form-control" [(ngModel)]="filterText" placeholder="Type here..." />
         </div>
         <hr>
         <div [innerHtml]= " paragraphToSearch | highlight: filterText" >

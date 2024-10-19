@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { RouterOutlet, RouterLink, RouterLinkActive, ActivatedRoute } from '@angular/router';
+import { RouterOutlet, RouterLink, RouterLinkActive, } from '@angular/router';
 import { WishItem } from '../../../shared/models/wishItem';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';

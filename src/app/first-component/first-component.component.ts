@@ -15,7 +15,7 @@ import { HighlightPipe } from './highlight.pipe';
   styleUrl: './first-component.component.css'
 })
 export class FirstComponentComponent {
-  profileNameChild: string = "Ahmad Azmi"
+  profileNameChild: string = "Sami Tariq"
   profileImageSrc: string = './././assets/images/profile-image.png';
   inputToRevese: string = 'abc';
   dangerButton: string = 'btn btn-danger';
